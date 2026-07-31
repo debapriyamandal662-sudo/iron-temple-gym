@@ -130,10 +130,10 @@ export default function Home() {
             aspectRatio="h-full w-full"
             rounded="rounded-none"
             iconSize={140}
-            className="w-full h-full object-cover object-[50%_12%] sm:object-[50%_8%] md:object-[50%_5%] filter brightness-90 contrast-115 sharpness-100"
+            className="w-full h-full object-cover object-[50%_0%] sm:object-[50%_0%] md:object-[50%_0%] filter brightness-95 contrast-110"
           />
-          {/* Subtle Balanced Overlay for Text Contrast without Dimming Anik's Physique */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/45 via-[#0a0a0a]/40 to-[#0a0a0a]" />
+          {/* Subtle 40% Overlay to Keep Anik's Face & Physique Vibrant */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/35 via-[#0a0a0a]/35 to-[#0a0a0a]" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,255,0,0.06)_0%,transparent_70%)]" />
         </div>
 
