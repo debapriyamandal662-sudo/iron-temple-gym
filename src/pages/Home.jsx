@@ -120,32 +120,25 @@ export default function Home() {
       <Navbar />
 
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0a0a0a]">
-        {/* Uncropped High-Res Hero Background - Anik Ghosh Olympia Stage */}
-        <div className="absolute inset-0 z-0 overflow-hidden flex justify-center lg:justify-end">
-          {/* Desktop & Laptop: Right-aligned portrait framing so face & upper body fit 100% within screen height */}
-          <div className="relative w-full lg:w-7/12 h-full">
-            <PlaceholderImage
-              src="/assets/anik_olympia_stage.jpg"
-              alt="IFBB Pro Anik Ghosh Olympia Stage"
-              icon={Dumbbell}
-              aspectRatio="h-full w-full"
-              rounded="rounded-none"
-              iconSize={140}
-              className="w-full h-full object-cover object-top filter brightness-[0.88] contrast-110"
-            />
-            {/* Horizontal Dark Gradient Fade from Left to Right */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent hidden lg:block" />
-            {/* Top & Bottom Subtle Vignette Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/80 via-[#0a0a0a]/40 to-[#0a0a0a]" />
-          </div>
-
-          {/* Radial Neon Glow Accent */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,255,0,0.08)_0%,transparent_65%)] pointer-events-none" />
+      <section className="relative min-h-screen flex items-center justify-center pt-32 sm:pt-36 lg:pt-40 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0a0a0a]">
+        {/* Full-Bleed Centered High-Res Hero Background - Anik Ghosh Olympia Stage */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <PlaceholderImage
+            src="/assets/anik_olympia_stage.jpg"
+            alt="IFBB Pro Anik Ghosh Olympia Stage"
+            icon={Dumbbell}
+            aspectRatio="h-full w-full"
+            rounded="rounded-none"
+            iconSize={140}
+            className="w-full h-full object-cover object-[50%_18%] sm:object-[50%_16%] md:object-[50%_14%] filter brightness-[0.72] contrast-115"
+          />
+          {/* Balanced Dark Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/50 via-[#0a0a0a]/45 to-[#0a0a0a]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,255,0,0.06)_0%,transparent_70%)]" />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8 mt-8">
+        <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8 mt-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
