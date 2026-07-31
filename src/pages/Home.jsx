@@ -121,8 +121,8 @@ export default function Home() {
 
       {/* 1. HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        {/* PlaceholderImage Background Layer using Real Anik Olympia Stage Photo */}
-        <div className="absolute inset-0 z-0">
+        {/* Crisp High-Res Hero Background - Anik Ghosh Olympia Stage */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <PlaceholderImage
             src="/assets/anik_olympia_stage.jpg"
             alt="IFBB Pro Anik Ghosh Olympia Stage"
@@ -130,11 +130,11 @@ export default function Home() {
             aspectRatio="h-full w-full"
             rounded="rounded-none"
             iconSize={140}
-            className="w-full h-full scale-105 filter brightness-[0.35] contrast-125 object-center"
+            className="w-full h-full object-cover object-[50%_12%] sm:object-[50%_8%] md:object-[50%_5%] filter brightness-90 contrast-115 sharpness-100"
           />
-          {/* Dark Gradient Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/75 to-[#0a0a0a]/50" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(200,255,0,0.08)_0%,transparent_70%)]" />
+          {/* Subtle Balanced Overlay for Text Contrast without Dimming Anik's Physique */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/45 via-[#0a0a0a]/40 to-[#0a0a0a]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,255,0,0.06)_0%,transparent_70%)]" />
         </div>
 
         {/* Hero Content */}
@@ -153,7 +153,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.08] text-white"
+            className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.08] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]"
           >
             Train Like a Pro. <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#c8ff00] to-[#b2e600]">
@@ -165,7 +165,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto font-medium leading-relaxed"
+            className="text-lg sm:text-xl text-neutral-200 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]"
           >
             Kolkata's premier fitness destination by IFBB Pro Anik Ghosh. Science-based hypertrophy, strength conditioning, and elite contest prep.
           </motion.p>
