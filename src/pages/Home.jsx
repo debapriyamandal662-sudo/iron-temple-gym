@@ -120,21 +120,28 @@ export default function Home() {
       <Navbar />
 
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        {/* Crisp High-Res Hero Background - Anik Ghosh Olympia Stage */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <PlaceholderImage
-            src="/assets/anik_olympia_stage.jpg"
-            alt="IFBB Pro Anik Ghosh Olympia Stage"
-            icon={Dumbbell}
-            aspectRatio="h-full w-full"
-            rounded="rounded-none"
-            iconSize={140}
-            className="w-full h-full object-cover object-[50%_0%] sm:object-[50%_0%] md:object-[50%_0%] filter brightness-95 contrast-110"
-          />
-          {/* Subtle 40% Overlay to Keep Anik's Face & Physique Vibrant */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/35 via-[#0a0a0a]/35 to-[#0a0a0a]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,255,0,0.06)_0%,transparent_70%)]" />
+      <section className="relative min-h-screen flex items-center justify-center pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0a0a0a]">
+        {/* Uncropped High-Res Hero Background - Anik Ghosh Olympia Stage */}
+        <div className="absolute inset-0 z-0 overflow-hidden flex justify-center lg:justify-end">
+          {/* Desktop & Laptop: Right-aligned portrait framing so face & upper body fit 100% within screen height */}
+          <div className="relative w-full lg:w-7/12 h-full">
+            <PlaceholderImage
+              src="/assets/anik_olympia_stage.jpg"
+              alt="IFBB Pro Anik Ghosh Olympia Stage"
+              icon={Dumbbell}
+              aspectRatio="h-full w-full"
+              rounded="rounded-none"
+              iconSize={140}
+              className="w-full h-full object-cover object-top filter brightness-[0.88] contrast-110"
+            />
+            {/* Horizontal Dark Gradient Fade from Left to Right */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent hidden lg:block" />
+            {/* Top & Bottom Subtle Vignette Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/80 via-[#0a0a0a]/40 to-[#0a0a0a]" />
+          </div>
+
+          {/* Radial Neon Glow Accent */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,255,0,0.08)_0%,transparent_65%)] pointer-events-none" />
         </div>
 
         {/* Hero Content */}
