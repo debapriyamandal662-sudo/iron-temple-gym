@@ -124,16 +124,16 @@ export default function Home() {
         {/* Full-Bleed Centered High-Res Hero Background - Anik Ghosh Olympia Stage */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <PlaceholderImage
-            src="/assets/anik_olympia_stage.jpg"
+            src="/assets/anik_hero_cropped.jpg"
             alt="IFBB Pro Anik Ghosh Olympia Stage"
             icon={Dumbbell}
             aspectRatio="h-full w-full"
             rounded="rounded-none"
             iconSize={140}
-            className="w-full h-full object-cover object-[50%_18%] sm:object-[50%_16%] md:object-[50%_14%] filter brightness-[0.72] contrast-115"
+            className="w-full h-full object-cover object-top filter brightness-[0.78] contrast-110"
           />
-          {/* Balanced Dark Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/50 via-[#0a0a0a]/45 to-[#0a0a0a]" />
+          {/* Subtle Balanced Overlay for Text Contrast */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/40 via-[#0a0a0a]/35 to-[#0a0a0a]" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(200,255,0,0.06)_0%,transparent_70%)]" />
         </div>
 
