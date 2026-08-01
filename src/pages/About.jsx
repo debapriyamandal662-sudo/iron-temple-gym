@@ -146,18 +146,18 @@ export default function About() {
       <Navbar />
 
       {/* 1. HERO SECTION */}
-      <section className="relative pt-36 pb-16 px-4 sm:px-6 lg:px-8 border-b border-white/5 overflow-hidden">
+      <section className="relative pt-36 pb-20 px-4 sm:px-6 lg:px-8 border-b border-white/5 overflow-hidden bg-[#0a0a0a]">
         <div className="absolute inset-0 z-0">
           <PlaceholderImage
-            src="/assets/anik_hero.jpg"
-            alt="Iron Temple"
+            src="/assets/anik_hero_cropped.jpg"
+            alt="Our Story - Iron Temple"
             icon={Dumbbell}
             aspectRatio="h-full w-full"
             rounded="rounded-none"
             iconSize={120}
-            className="w-full h-full filter brightness-40"
+            className="w-full h-full object-cover object-top filter brightness-[0.78] contrast-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/80 to-[#0a0a0a]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/50 via-[#0a0a0a]/40 to-[#0a0a0a]" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto text-center space-y-4">
@@ -167,11 +167,11 @@ export default function About() {
             <span className="text-[#c8ff00]">About Us</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-black uppercase tracking-tight">
+          <h1 className="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
             Our <span className="text-[#c8ff00]">Story</span>
           </h1>
 
-          <p className="text-base sm:text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl text-neutral-200 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
             The passion, vision, and relentless work ethic that built Kolkata's premier IFBB Pro training facility.
           </p>
         </div>
