@@ -28,6 +28,7 @@ export default function Blog() {
       readTime: '5 min read',
       author: 'IFBB Pro Anik Ghosh',
       icon: Dumbbell,
+      image: '/assets/blog_hypertrophy.jpg',
       excerpt: 'Learn how adjusting active muscle length, cable angles, and progressive overload periodization can double your arm and chest growth without joint strain.'
     },
     {
@@ -38,6 +39,7 @@ export default function Blog() {
       readTime: '7 min read',
       author: 'IFBB Pro Anik Ghosh',
       icon: Utensils,
+      image: '/assets/blog_nutrition.jpg',
       excerpt: 'Struggling with stubborn belly fat on a traditional diet? Here is how to structure protein intake, rice/roti carbs, and healthy fats for sustainable fat loss.'
     },
     {
@@ -48,6 +50,7 @@ export default function Blog() {
       readTime: '8 min read',
       author: 'IFBB Pro Anik Ghosh',
       icon: Trophy,
+      image: '/assets/blog_contest_prep.jpg',
       excerpt: 'An inside look into water manipulation, sodium loading, and carbohydrate front-loading used by competitive bodybuilders in peak week.'
     }
   ];
@@ -98,17 +101,14 @@ export default function Blog() {
               className="bg-[#141414] border border-white/10 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-[#c8ff00]/50 transition-all duration-300 shadow-xl group"
             >
               <div>
-                {/* Article Placeholder Image */}
-                <div className="overflow-hidden relative">
-                  <PlaceholderImage
-                    icon={article.icon}
-                    aspectRatio="aspect-video"
-                    rounded="rounded-none"
-                    iconSize={56}
-                    label={article.category}
-                    className="w-full transition-transform duration-500 group-hover:scale-105"
+                {/* Article Featured Image */}
+                <div className="overflow-hidden relative aspect-video w-full bg-[#0a0a0a]">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute top-3 left-3 bg-[#c8ff00] text-black text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full">
+                  <span className="absolute top-3 left-3 bg-[#c8ff00] text-black text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full shadow-md z-10">
                     {article.category}
                   </span>
                 </div>
